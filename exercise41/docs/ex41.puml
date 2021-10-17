@@ -1,0 +1,8 @@
+@startuml
+
+class Solution41
+Solution41 : + List<String> readNames(Files inputFile)
+Solution41 : + List<String> sortNames(List<String> names)
+Solution41 : + void writeNames(File outputFile, List<String> names)
+
+@enduml
