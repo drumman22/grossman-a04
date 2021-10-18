@@ -1,0 +1,6 @@
+@startuml
+
+class Solution45
+Solution45 : + void replaceWords(File path, String word, String newWord)
+
+@enduml
