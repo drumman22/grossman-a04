@@ -1,0 +1,25 @@
+@startuml
+
+class Item {
+    String name
+    double price
+    int quantity
+}
+
+Item : void setName(String name)
+Item : String getName()
+Item : void setPrice(int price)
+Item : int getPrice()
+Item : void setQuantity(int quantity)
+Item : int getQuantity()
+
+class Solution44 {
+    List<Item> itemList
+}
+
+Solution44 : + void parseJSON()
+Solution44 : + boolean searchItemByName(String name)
+
+Solution44 -- Item
+
+@enduml
