@@ -1,0 +1,11 @@
+@startuml
+
+class Solution46 {
+    Map<String, Integer> wordFrequencyMap
+}
+
+Solution46 : + void wordsToMap(File inputFile)
+Solution46 : + String numToStars(int num)
+Solution46 : + void printWordFrequency()
+
+@enduml
