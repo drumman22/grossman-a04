@@ -1,0 +1,32 @@
+@startuml
+
+class Solution43
+
+Solution43 : + boolean getBoolInput(String message)
+Solution43 : + boolean validateBoolInput(String in, String message)
+Solution43 : + String getStringInput(String message)
+
+
+class WebsiteGenerator {
+    - String siteName
+    - String authorName
+    - boolean createJSFolder
+    - boolean createCSSFolder
+}
+
+WebsiteGenerator : + void createDirectory(File path)
+WebsiteGenerator : + void createFolder(File path)
+WebsiteGenerator : + void formatHtmlTemplate(File dir, File template)
+WebsiteGenerator : - copyFile(File source, File dest)
+WebsiteGenerator : + String getSiteName()
+WebsiteGenerator : + void setSiteName(String siteName)
+WebsiteGenerator : + String getAuthor()
+WebsiteGenerator : + void setAuthor(String author)
+WebsiteGenerator : + boolean isJSFolder()
+WebsiteGenerator : + void setJSFolder(boolean JSFolder)
+WebsiteGenerator : + boolean isCSSFolder()
+WebsiteGenerator : + void setCSSFolder(boolean CSSFolder)
+
+Solution43 -- WebsiteGenerator
+
+@enduml
