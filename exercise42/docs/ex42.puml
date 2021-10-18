@@ -1,0 +1,23 @@
+@startuml
+
+class Solution42
+Solution42 : + List<Person> getPersonList(File inputFile)
+Solution42 : + List<Person> generatePersonList(List<String> lines)
+Solution42 : + void writePersonList(File outputFile, List<Person> people)
+
+class Person {
+    String firstName
+    String lastName
+    int salary
+}
+
+Person : + String getFirst()
+Person : + void setFirst(String first)
+Person : + String getLastName()
+Person : + void setLastName(String last)
+Person : + int getSalary()
+Person : + void setSalary(int salary)
+
+Solution42 -- Person
+
+@enduml
