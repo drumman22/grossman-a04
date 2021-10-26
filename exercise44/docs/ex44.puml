@@ -8,8 +8,8 @@ class Item {
 
 Item : void setName(String name)
 Item : String getName()
-Item : void setPrice(int price)
-Item : int getPrice()
+Item : void setPrice(double price)
+Item : double getPrice()
 Item : void setQuantity(int quantity)
 Item : int getQuantity()
 
